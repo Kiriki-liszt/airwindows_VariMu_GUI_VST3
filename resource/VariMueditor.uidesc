@@ -1,0 +1,355 @@
+{
+	"vstgui-ui-description": {
+		"version": "1",
+		"bitmaps": {
+			"background": {
+				"path": "background.png"
+			},
+			"button_onoff": {
+				"path": "button_onoff.png"
+			},
+			"knob_black": {
+				"path": "knob_black.png"
+			},
+			"knob_blue": {
+				"path": "knob_blue.png"
+			},
+			"knob_violet": {
+				"path": "knob_violet.png"
+			},
+			"knob_gray": {
+				"path": "knob_gray.png"
+			},
+			"knob_green": {
+				"path": "knob_green.png"
+			},
+			"knob_red": {
+				"path": "knob_red.png"
+			},
+			"knob_yellow": {
+				"path": "knob_yellow.png"
+			},
+			"knob_50": {
+				"path": "knob_50.png"
+			},
+			"meter_off": {
+				"path": "meter_off.png"
+			},
+			"meter_on": {
+				"path": "meter_on.png"
+			}
+		},
+		"fonts": {},
+		"colors": {},
+		"gradients": {},
+		"control-tags": {
+			"Bypass": "11",
+			"Gain": "4",
+			"InVuPPML": "6",
+			"InVuPPMR": "7",
+			"Input": "0",
+			"Intensity": "2",
+			"Mix": "5",
+			"OutVuPPML": "8",
+			"OutVuPPMR": "9",
+			"GRVuPPM":  "10",
+			"Output": "1",
+			"Speed": "3"
+		},
+		"custom": {
+			"FocusDrawing": {},
+			"VST3Editor": {
+				"Path": "C:\\VST_make\\Kiriki_yg_Liszt\\generator\\Airwindows VariMu\\resource\\VariMueditor.uidesc"
+			},
+			"UIGridController": {
+				"Grids": "1x 1,5x 5,10x 10,12x 12,15x 15",
+				"Size": "1, 1"
+			},
+			"UIEditController": {
+				"EditViewScale": "1",
+				"EditorSize": "0, 0, 718, 551",
+				"SplitViewSize_0_0": "0.752380952380952372493538859998807311058",
+				"SplitViewSize_0_1": "0.2095238095238095288319613018757081590593",
+				"SplitViewSize_1_0": "0.4761904761904761640423089374962728470564",
+				"SplitViewSize_1_1": "0.5161904761904761995694457255012821406126",
+				"SplitViewSize_2_0": "0.6740947075208914007760085951304063200951",
+				"SplitViewSize_2_1": "0.3189415041782729942632101938215782865882",
+				"TabSwitchValue": "4",
+				"Version": "1"
+			},
+			"UITemplateController": {
+				"SelectedTemplate": "view"
+			},
+			"UIAttributesController": {},
+			"UIViewCreatorDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIGradientsDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIBitmapsDataSource": {
+				"SelectedRow": "9"
+			},
+			"UIFontsDataSource": {
+				"SelectedRow": "-1"
+			}
+		},
+		"templates": {
+			"view": {
+				"attributes": {
+					"background-color": "~ BlackCColor",
+					"background-color-draw-style": "filled and stroked",
+					"class": "CViewContainer",
+					"mouse-enabled": "true",
+					"opacity": "1",
+					"origin": "0, 0",
+					"size": "332, 294",
+					"transparent": "false",
+					"wants-focus": "false"
+				},
+				"children": {
+					"CView": {
+						"attributes": {
+							"bitmap": "background",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "0, 0",
+							"size": "332, 294",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CVuMeter": {
+						"attributes": {
+							"bitmap": "meter_on",
+							"class": "CVuMeter",
+							"control-tag": "InVuPPML",
+							"decrease-step-value": "0.1",
+							"default-value": "0",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "false",
+							"num-led": "100",
+							"off-bitmap": "meter_off",
+							"opacity": "1",
+							"orientation": "vertical",
+							"origin": "23, 28",
+							"size": "10, 180",
+							"transparent": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CVuMeter": {
+						"attributes": {
+							"bitmap": "meter_on",
+							"class": "CVuMeter",
+							"control-tag": "InVuPPMR",
+							"decrease-step-value": "0.1",
+							"default-value": "0",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "false",
+							"num-led": "100",
+							"off-bitmap": "meter_off",
+							"opacity": "1",
+							"orientation": "vertical",
+							"origin": "48, 28",
+							"size": "10, 180",
+							"transparent": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CVuMeter": {
+						"attributes": {
+							"bitmap": "meter_on",
+							"class": "CVuMeter",
+							"control-tag": "OutVuPPML",
+							"decrease-step-value": "0.1",
+							"default-value": "0",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "false",
+							"num-led": "100",
+							"off-bitmap": "meter_off",
+							"opacity": "1",
+							"orientation": "vertical",
+							"origin": "274, 28",
+							"size": "10, 180",
+							"transparent": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CVuMeter": {
+						"attributes": {
+							"bitmap": "meter_on",
+							"class": "CVuMeter",
+							"control-tag": "OutVuPPMR",
+							"decrease-step-value": "0.1",
+							"default-value": "0",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "false",
+							"num-led": "100",
+							"off-bitmap": "meter_off",
+							"opacity": "1",
+							"orientation": "vertical",
+							"origin": "299, 28",
+							"size": "10, 180",
+							"transparent": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_blue",
+							"class": "CAnimKnob",
+							"control-tag": "Gain",
+							"default-value": "0.5",
+							"height-of-one-image": "80",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "91, 193",
+							"size": "80, 80",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_red",
+							"class": "CAnimKnob",
+							"control-tag": "Intensity",
+							"default-value": "1",
+							"height-of-one-image": "80",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "92, 105",
+							"size": "80, 80",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_yellow",
+							"class": "CAnimKnob",
+							"control-tag": "Speed",
+							"default-value": "0.5",
+							"height-of-one-image": "80",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "161, 105",
+							"size": "80, 80",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_gray",
+							"class": "CAnimKnob",
+							"control-tag": "Mix",
+							"default-value": "0.5",
+							"height-of-one-image": "80",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "161, 192",
+							"size": "80, 80",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_50",
+							"class": "CAnimKnob",
+							"control-tag": "Input",
+							"default-value": "0.5",
+							"height-of-one-image": "50",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "15, 219",
+							"size": "50, 50",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					},
+					"CAnimKnob": {
+						"attributes": {
+							"angle-range": "140",
+							"angle-start": "-140",
+							"bitmap": "knob_50",
+							"class": "CAnimKnob",
+							"control-tag": "Output",
+							"default-value": "0.5",
+							"height-of-one-image": "50",
+							"inverse-bitmap": "false",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "266, 220",
+							"size": "50, 50",
+							"sub-pixmaps": "127",
+							"transparent": "false",
+							"value-inset": "0",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1",
+							"zoom-factor": "1.5"
+						}
+					}
+				}
+			}
+		}
+	}
+}
